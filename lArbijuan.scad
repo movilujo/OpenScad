@@ -146,10 +146,12 @@ module arbol ( n, v, l, r, anx, any) {
   }
   else {
      translate(vi){
+     color("BurlyWood")
       rama(vn, 0, rn);
-      arbol(n-1, vn, ln, rn, angX, angY);
+     arbol(n-1, vn, ln, rn, angX, angY);
+     color("BurlyWood")
       rama(vn0, 0, rn);
-      arbol(n-1, vn0, ln, rn, angX, angY);
+     arbol(n-1, vn0, ln, rn, angX, angY);
      }
   } 
 }
@@ -177,9 +179,11 @@ module arbolD ( n, v, l, r, anx, any) {
   }
   else {
      translate(vi){
-      rama(vn, 0, rn);
+   color("BurlyWood")
+     rama(vn, 0, rn);
       arbol(n-1, vn, ln, rn, angX, angY);
-      rama(vn0, 0, rn);
+   color("BurlyWood")
+     rama(vn0, 0, rn);
       arbol(n-1, vn0, ln, rn, angX, angY);
      }
   } 
